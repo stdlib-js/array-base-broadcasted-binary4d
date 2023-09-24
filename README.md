@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import bbinary4d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-binary4d@deno/mod.js';
+import bbinary4d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-binary4d@v0.1.0-deno/mod.js';
 ```
 
 #### bbinary4d( arrays, shapes, fcn )
@@ -104,7 +104,7 @@ var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-bas
 import filled4dBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled4d-by@deno/mod.js';
 import zeros4d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros4d@deno/mod.js';
 import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-add@deno/mod.js';
-import bbinary4d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-binary4d@deno/mod.js';
+import bbinary4d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-binary4d@v0.1.0-deno/mod.js';
 
 var shapes = [
     [ 1, 1, 1, 3 ],
