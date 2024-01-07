@@ -41,30 +41,38 @@ limitations under the License.
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/array-base-broadcasted-binary4d
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var bbinary4d = require( '@stdlib/array-base-broadcasted-binary4d' );
+bbinary4d = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-binary4d@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var bbinary4d = require( 'path/to/vendor/umd/array-base-broadcasted-binary4d/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-binary4d@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.bbinary4d;
+})();
+</script>
 ```
 
 #### bbinary4d( arrays, shapes, fcn )
@@ -115,8 +123,13 @@ The function accepts the following arguments:
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {.factory;
 var filled4dBy = require( '@stdlib/array-base-filled4d-by' );
 var zeros4d = require( '@stdlib/array-base-zeros4d' );
 var add = require( '@stdlib/math-base-ops-add' );
@@ -139,6 +152,11 @@ console.log( z );
 
 bbinary4d( [ x, y, z ], shapes, add );
 console.log( z );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -222,9 +240,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-broadcasted-binary4d/main/LICENSE
 
-[@stdlib/array/base/broadcast-array]: https://github.com/stdlib-js/array-base-broadcast-array
+[@stdlib/array/base/broadcast-array]: https://github.com/stdlib-js/array-base-broadcast-array/tree/umd
 
-[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes
+[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes/tree/umd
 
 </section>
 
